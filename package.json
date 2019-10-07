@@ -1,0 +1,13 @@
+{
+  "name": "nestjs-issues",
+  "version": "1.0.0",
+  "description": "Monorepo for nestjs issues",
+  "scripts": {},
+  "author": "Vasil Rangelov <boen.robot@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^6.10.1"
+  }
+}
