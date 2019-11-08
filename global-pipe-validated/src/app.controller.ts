@@ -1,6 +1,6 @@
-import {Controller, Get, Query, Req} from '@nestjs/common';
-import {Request} from "express";
-import {ParsedUrlQuery} from "querystring";
+import { Controller, Get, Query, Req } from '@nestjs/common';
+import { Request } from 'express';
+import { ParsedUrlQuery } from 'querystring';
 import { AppService } from './app.service';
 import { Hostname } from './hostname.decorator';
 
