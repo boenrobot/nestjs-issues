@@ -2,14 +2,16 @@ import {
   ArgumentMetadata,
   BadRequestException,
   Injectable,
-  PipeTransform,
+  PipeTransform, ValidationPipe,
 } from '@nestjs/common';
 
 @Injectable()
-export class MyValidationPipe<T extends unknown> implements PipeTransform {
-  public constructor() {}
+export class MyValidationPipe<T extends unknown> implements PipeTransform  {
 
   public async transform(value: T, metadata: ArgumentMetadata): Promise<T> {
-    throw new BadRequestException('Validation triggered!');
+    if (metadata.type !== 'custom') {
+      throw new BadRequestException('Validation triggered!');
+    }
+    return value;
   }
 }

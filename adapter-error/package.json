@@ -1,0 +1,35 @@
+{
+  "name": "adapter-error",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^6.10.11",
+    "@nestjs/core": "^6.10.11",
+    "@nestjs/platform-fastify": "^6.10.11",
+    "fastify": "^2.11.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.0",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.1.1",
+    "ts-node": "^8.4.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.6.3"
+  }
+}
